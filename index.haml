@@ -1,0 +1,158 @@
+:plain
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+%html
+	%head
+		%meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		%meta(property="og:title" content="*|MC:SUBJECT|*")
+		%title
+			*|MC:SUBJECT|*
+		%link{href: "test.css?__inline=true", rel: "stylesheet"}
+	%body{leftmargin: 0, marginwidth: 0, topmargin: 0, marginheight: 0, offset: 0}
+		%center
+			%table#backgroundTable{border: 0, cellpadding: 0, cellspacing: 0, height: "100%", width: "100%"}
+				%tr
+					%td{align: "center", valign: "top"}
+						-# // Begin Template Preheader \\
+						%table#templatePreheader{border: 0, cellpadding: 10, cellspacing: 0, width: 600}
+							%tr
+								%td.preheaderContent{valign: "top"}
+									-# // Begin Module: Standard Preheader \\
+									%table{border: 0, cellpadding: 10, cellspacing: 0, width: "100%"}
+										%tr
+											%td{valign: "top"}
+												%div(mc:edit="std_preheader_content")
+													Use one or two sentences in this area to offer a teaser of your email's content. Text here will show in a preview area in some email clients.
+											%td{valign: "top", width: 180}
+												%div(mc:edit="std_preheader_links")
+													:plain
+														<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+
+													:plain
+														<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+									-# // End Module: Standard Preheader \\
+						-# // End Template Preheader \\
+						%table#templateContainer{border: 0, cellpadding: 0, cellspacing: 0, width: 600}
+							%tr
+								%td{align: "center", valign: "top"}
+									-# // Begin Template Header \\
+									%table#templateHeader{border: 0, cellpadding: 0, cellspacing: 0, width: 600}
+										%tr
+											%td.headerContent
+												-# // Begin Module: Standard Header Image \\
+												%img#headerImage{src: "http://gallery.mailchimp.com/653153ae841fd11de66ad181a/images/placeholder_600.gif", style: "max-width: 600px"}(mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext)
+												-# // End Module: Standard Header Image \\
+									-# // End Template Header \\
+							%tr
+								%td{align: "center", valign: "top"}
+									-# // Begin Template Body \\
+									%table#templateBody{border: 0, cellpadding: 10, cellspacing: 0, width: 600}
+										%tr
+											%td.bodyContent{valign: "top"}
+												-# // Begin Module: Standard Content \\
+												%table{border: 0, cellpadding: 10, cellspacing: 0, width: "100%"}
+													%tr
+														%td{valign: "top"}
+															%div(mc:edit="std_content00")
+																%span.h1
+																	Heading 1
+																%span.h2
+																	Heading 2
+																%span.h3
+																	Heading 3
+																%span.h4
+																	Heading 4
+																%strong
+																	Getting started:
+																Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content!
+																%br
+																%br
+																After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "styles" drop down box. Want to 
+																%a{href: "http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change", target: "_blank"}
+																	get rid of styling on a bit of text
+																, but having trouble doing it? Just use the "clear styles" button to strip the text of any formatting and reset your style.
+												-# // End Module: Standard Content \\
+									-# // End Template Body \\
+							%tr
+								%td{align: "center", valign: "top"}
+									-# // Begin Template Footer \\
+									%table#templateFooter{border: 0, cellpadding: 10, cellspacing: 0, width: 600}
+										%tr
+											%td.footerContent{valign: "top"}
+												-# // Begin Module: Standard Footer \\
+												%table{border: 0, cellpadding: 10, cellspacing: 0, width: "100%"}
+													%tr
+														%td#social{colspan: 2, valign: "middle"}
+															%div(mc:edit="std_social")
+																&nbsp;
+																%a{href: "*|TWITTER:PROFILEURL|*"}
+																	Follow on Twitter
+																|
+																%a{href: "*|FACEBOOK:PROFILEURL|*"}
+																	friend on Facebook
+																|
+																%a{href: "*|FORWARD|*"}
+																	forward to a friend
+													%tr
+														%td{valign: "top", width: 370}
+															%br
+																%div(mc:edit="std_footer")
+																	:plain
+																		<!-- *|IF:LIST|* -->
+																	%em
+																		Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
+																	%br
+																	:plain
+																		<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+																	*|LIST:DESCRIPTION|*
+																	%br
+																	%strong
+																		Our mailing address is:
+																	%br
+																	*|HTML:LIST_ADDRESS_HTML|*
+																	%br
+																	:plain
+																		<!-- *|END:IF|* -->
+																		<!-- *|ELSE:|* -->
+																		<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+																	%em
+																		Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.
+																	%br
+																	%strong
+																		Our mailing address is:
+																	%br
+																	*|USER:ADDRESS_HTML|*
+																	:plain
+																		<!-- *|END:IF|* -->
+																		<!-- *|END:IF|* -->
+																%br
+														%td#monkeyRewards{valign: "top", width: 170}
+															%br
+															%div(mc:edit="monkeyrewards")
+																:plain
+																	<!-- *|IF:REWARDS|* -->
+																*|HTML:REWARDS|*
+																:plain
+																	<!-- *|END:IF|* -->
+													%tr
+														%td#utility{colspan: 2, valign: "middle"}
+															%div(mc:edit="std_utility")
+																&nbsp;
+																%a{href: "*|UNSUB|*"}
+																	unsubscribe from this list
+																|
+																%a{href: "*|UPDATE_PROFILE|*"}
+																	update subscription preferences
+																:plain
+																	<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+																|
+																%a{href: "*|ARCHIVE|*"}
+																	view email in browser
+																:plain
+																	<!-- *|END:IF|* -->
+																&nbsp;
+												-# // End Module: Standard Footer \\
+									-# // End Template Footer \\
+
+
+
+
