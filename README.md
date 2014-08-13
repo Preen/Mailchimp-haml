@@ -15,3 +15,5 @@ If you don't want my npm/ruby installation you need to install these with:
 * npm install grunt-contrib-watch
 
 The open up another terminal windows and cwd into the root dir of the project. The first window one you type in: `grunt watch`, the other one you type in `bundle exec guard`. Press enter on both and it should start!
+
+The final file will be inside the inline folder
